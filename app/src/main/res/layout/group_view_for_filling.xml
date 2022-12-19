@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:weightSum="3">
+<TextView
+    android:id="@+id/groupviewforfilling_txt_filling"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    tools:text="islam basher mohamed"
+    android:layout_margin="20dp"
+    android:textColor="@color/black"
+    android:textSize="15dp"
+    android:layout_weight="2"
+    />
+    <TextView
+        android:id="@+id/groupviewforfilling_txt_spoon"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="islam basher "
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

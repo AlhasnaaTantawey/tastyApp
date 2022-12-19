@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DetailsForRecipe"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/detailForRecipes_txtv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/detalisForRecipes_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/detailForRecipes_txtv_ingridents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="Ingredients"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/detailForRecipes_txtv_ingridentsValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/detailForRecipes_txtv_filling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="FILLING"
+            android:padding="10dp"
+            android:textStyle="bold"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentDetail_recyclerview_filling"
+            android:layout_margin="20dp"
+            />
+        <TextView
+            android:id="@+id/detailForRecipes_txtv_preperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="preperation"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="13dp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/detailForRecipes_txtv_stepBystep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="step_by_step mode"
+            android:padding="13dp"
+            android:background="@color/red"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentDetail_recyclerview_ingridents"/>
+    </LinearLayout>
+</ScrollView>

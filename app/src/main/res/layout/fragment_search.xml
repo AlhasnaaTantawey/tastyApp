@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchFragment">
+
+
+    <EditText
+        android:id="@+id/main_edtT_search"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/search_shape"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawablePadding="10dp"
+        android:hint="Search for recipes "
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:id="@+id/searchFramgment_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="30dp"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:id="@+id/searchfragment_txtv_onpicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <ProgressBar
+                android:id="@+id/searchfragment_progress_cicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+              />
+
+            <TextView
+                android:id="@+id/searchFrag_txtV_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red50"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="Trending" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/searchFrag_txtV_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="@color/red50"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="SWEETS" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/searchFrag_txtV_txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="@color/red50"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="the best" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/searchFrag_txtV_txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="@color/red50"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="pastry" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/searchFrag_txtV_txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:textColor="@color/red50"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:text="skdsjs" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recycler5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
